@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 1rem;
+}
+
+.fullscreen-img {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+.temperature-converter{
+  background-color:rgb(110, 136, 161) 90.2%;
+  width: 100%;
+  min-width: 330px;
+  border-radius: 5px;
+  padding: 20px 25px 45px;
+  backdrop-filter: blur(21px);
+  display: flex;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: -5px -5px 250px 0 rgb(255, 255, 255,0.2) inset;
+}
+
+.mobile{
+  display: flex;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.result{
+text-align: center;
+margin: 20px 0;
+}
+
+.result-heading{
+  color:#000;
+  font-size:1rem;
+  font-weight: 600;
+}
+
+.celsius-value{
+  border-bottom: 2px solid #ccc;
+  transition: all .45s ease;
+  padding: 10px;
+}
+
+.degree-type{
+  justify-content:space-between;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.degree-field{
+  width : 46%;
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  color: #000;
+  margin-bottom: 5px;
+  font-size:.8rem ;
+}
+
+input, select{
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+input focus{
+  border: 2px solid  linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+}
+
+option{
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+  color: rgb(221, 221, 221) 5.5%;
+}
+
+#convert-button{
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: linear-gradient rgb(110, 136, 161) 5.5%);
+  background:linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+  padding: 12px 80px;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing:1px;
+  transition:all 1.0s ease-in;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#convert-button:hover{
+  background:#fff;
+  
+}
+
+.fa{
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}

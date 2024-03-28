@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="pexels-invisiblepower-1076885.jpg"
+        alt="Full Screen Image"
+        class="fullscreen-img"
+      />
+      <div class="temperature-converter">
+        <div class="mobile">
+          <p>7:00 AM</p>
+          <div>
+            <i class="bx bx-signal-4"></i>
+            <i class="bx bx-wifi"></i>
+            <i class="bx bx-battery"></i>
+          </div>
+        </div>
+        <h2 class="title">Temperature Converter</h2>
+        <div class="result">
+          <span class="result-heading">Result (Celsius)</span>
+          <h2 class="celsius-value" id="celsius">1</h2>
+        </div>
+        <div class="degree-type">
+          <div class="degree-field">
+            <label for="degree">Degrees</label>
+            <input type="number" name="degree" id="degree" />
+          </div>
+          <div class="temp-field">
+            <label for="temp-type">Type</label>
+            <select name="temperatures" id="temp-type" aria-autocomplete="on">
+              <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+              <option value="kelvin" id="kelvin">Kelvin</option>
+            </select>
+          </div>
+        </div>
+        <button id="convert-button">Convert</button>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
